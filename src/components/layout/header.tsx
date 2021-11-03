@@ -16,7 +16,7 @@ export const menuData = [
   },
   {
     title: "nav.admin",
-    link: "/admin",
+    link: "/login",
   },
 ];
 

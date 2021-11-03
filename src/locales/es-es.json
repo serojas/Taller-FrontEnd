@@ -3,7 +3,7 @@
         "title": "Bienvenid@s a mi Web Portfolio"
     },
     "landing": {
-        "title": "Bienvenido a mi Portfolio"
+        "title": "Bienvenido a mi Página Web"
     },
     "loader" : {
         "text": "cargando..."
@@ -28,5 +28,17 @@
         "occupation": "Ocupación",
         "company": "Empresa",
         "github": "Link"
+    },
+    "project":{
+        "project_title":"",
+        "title":"Título",
+        "description":"Descripción",
+        "tags": "Etiquetas",
+        "link":"Url",
+        "version":"Versión",
+        "button_post":"Publicar",
+        "button_delete":"Borrar",
+        "adding_error":"Error al añadir nuevo projecto"
+
     }
 }

@@ -19,7 +19,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
 
-  let { from } = (location.state as any) || { from: { pathname: "/" } };
+  let { from } = (location.state as any) || { from: { pathname: "/project" } };
 
 
   async function doLogin(event: FormEvent<HTMLFormElement>) {
@@ -78,6 +78,7 @@ const Login = () => {
     </Wrapper>
   );
 };
+
 
 const Wrapper = styled.div`
   overflow: hidden;

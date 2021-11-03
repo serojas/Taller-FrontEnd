@@ -12,6 +12,7 @@ import PrivateRoute from "./routes/PrivateRoute";
 import Loader from "./elements/Loader";
 import Dashboard from "./routes/Dashboard";
 import Admin from "./routes/Admin";
+import NewProjectCard from "./cards/NewProjectCard";
 
 const App = () => {
   
@@ -31,6 +32,9 @@ const App = () => {
           </Route>
           <PrivateRoute path="/admin">
             <Admin />
+          </PrivateRoute>
+          <PrivateRoute path="/project">
+            <NewProjectCard />
           </PrivateRoute>
           <Redirect from="*" to="/" />
         </Switch>

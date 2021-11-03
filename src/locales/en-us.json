@@ -3,7 +3,7 @@
         "title": "Welcome to my Portfolio Webpage"
     },
     "landing": {
-        "title": "Welcome to my Portfolio"
+        "title": "Welcome to my Web Page"
     },
     "loader" : {
         "text": "loading..."
@@ -28,5 +28,15 @@
         "occupation": "Occupation",
         "company": "Company",
         "github": "Link"
+    },
+    "project":{
+        "title":"Title",
+        "description":"Description",
+        "tags": "Tags",
+        "link":"Link",
+        "version":"Version",
+        "button_post":"Post",
+        "button_delete":"Delete",
+        "adding_error":"Error at adding new project"
     }
 }

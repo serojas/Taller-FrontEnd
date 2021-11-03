@@ -81,3 +81,12 @@ export const SmallText2 = styled.p`
   line-height: 130%;
   text-transform: uppercase;
 `
+export const LinkCard = styled.a`
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
+  @media (max-width: 450px) {
+    font-size: 14px;
+    line-height: 100%;
+  }
+`

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { themes } from "../../styles/ColorStyles";
-import { MediumText } from "../../styles/TextStyles";
+import { MediumText, LinkCard } from "../../styles/TextStyles";
 
 interface AboutMeCardRowProps {
   title: string;
@@ -23,9 +23,12 @@ const AboutMeCardRow = (props: AboutMeCardRowProps) => {
     <InfoDetailBox>
       <InfoKey>{props.title}</InfoKey>
       <InfoValueWrapper>
+          {typeof props.value === 'string' && ( props.value.toString().includes("http") || props.value.toString().includes("https")) ?
+          <LinkValue href={props.value}>{props.value}</LinkValue>
+          :
           <InfoValue>{
-          formatDate(props.value)
-          }</InfoValue>
+            formatDate(props.value)
+          }</InfoValue>}
       </InfoValueWrapper>
     </InfoDetailBox>
   );
@@ -52,7 +55,7 @@ const InfoKey = styled(MediumText)`
   
 `;
 
-const InfoValue = styled(MediumText)`
+const InfoValue = styled(LinkCard)`
   color: ${themes.light.text1};
   margin-bottom: 8px;
 
@@ -61,5 +64,13 @@ const InfoValue = styled(MediumText)`
   }
 `;
 
+const LinkValue = styled(LinkCard)`
+  color: ${themes.light.primary};
+  margin-bottom: 8px;
+
+  @media (prefers-color-scheme: dark) {
+    color: ${themes.dark.primary};
+  }
+`;
 export default AboutMeCardRow
 ;
